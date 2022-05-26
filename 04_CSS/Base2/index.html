@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+     <META charset="utf-8"> 
+     <TITLE>Комбинаторы. Псевдоэлементы и псевдоклассы </TITLE>      
+
+     <style > 
+        table{ border-collapse: collapse;
+              border-color: white;
+        }
+       
+       tbody>tr>td{ 
+             border-right-color: black;
+              border-bottom-color: black;
+              border-style: dotted;
+            }
+       tbody>tr>td:last-child{     
+              border-right-color: white;
+              border-bottom-color:black;
+              border-style: dotted;
+            }
+       tbody>tr:nth-child(odd)  {background-color: white;}   
+       tbody>tr:nth-child(even)  {background-color: rgb(255, 255, 169);}   
+
+       .thdr{ background-color: olivedrab;}
+
+       tbody tr:hover{background-color: aquamarine;}
+         
+    </style>
+    </head>
+ 
+    <body>
+
+       <table border="1">
+        <thead> 
+        <tr class="thdr">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>данные 01</th>
+            <th>данные 02</th>
+        </tr>
+        </thead> 
+       <tfoot>
+            <tr>
+                <td colspan="6"  align="center">данные о сотрудниках</td>
+            </tr>
+        </tfoot>    
+        
+        <tbody >
+        <tr >
+            <td>Иванов Иван Иванович</td> <td>М</td> <td>начальник</td> <td>01.01.1960</td> <td>234</td> <td>345345</td>
+        </tr>
+        <tr >
+            <td>Петрова Илона Петровна</td> <td>Ж</td> <td>секретарь</td> <td>01.01.1989</td> <td>23444</td> <td>3445345</td>
+        </tr>
+        <tr >
+            <td>Сидоров Илья Игоревич</td> <td>М</td> <td>бухгалтер</td> <td>01.01.1979</td> <td>274334</td> <td>34534555</td>
+        </tr>
+        <tr >
+            <td>Пупкин Федор Васильевич</td> <td>М</td> <td>водитель</td> <td>01.01.1977</td> <td>23994</td> <td>345398745</td>
+        </tr>
+        <tr >
+            <td>Дрюпкин Иван Иванович</td> <td>М</td> <td>водитель 2</td> <td>01.01.1978</td> <td>2343465</td> <td>34536645</td>
+        </tr>
+        </tbody>
+
+     
+
+       </table> 
+    </body>
+</html>
