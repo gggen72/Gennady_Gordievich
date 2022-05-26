@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<HTML lang="en"> 
+ <HEAD> 
+  <META charset="utf-8"> 
+  <TITLE>Адаптивная навигация</TITLE> 
+  <style>
+   nav { margin: 10px 0;  } 
+   nav ul { padding:0;
+			margin:0;
+			list-style: none;
+			position: relative;
+			    }  
+ 		
+   nav ul li:hover > ul {  display: block;	}  
+   nav a {
+			    padding:0 5px;
+			    color:white;
+			    font-size:16px;
+			    text-decoration:none;
+			}
+   nav ul li:hover { background-color: black; }
+
+  @media all and (min-width:700px)    {    
+ 
+   nav ul li {  border-style: solid;
+                border-width: 2pt;
+			    display:inline-block;
+			    background-color: orangered;
+                width: 100px;
+			    } 
+
+   nav ul ul {  display: none;
+			    position: absolute; 
+             }
+   nav ul ul li {
+			    float:none;
+			    display:list-item;
+			    position: relative;
+                margin-top: 2px;
+			}
+        }    
+
+
+  @media all and (max-width: 699px)    {
+    nav ul li {  border-style: solid;
+                border-width: 2pt;
+			    display:block;
+			    background-color: orangered;
+                width: 100px;
+                margin-top: 2px;
+			    } 
+
+    nav ul ul {  display: none;
+			    position: absolute; 
+                margin-left: 105px;
+                margin-top: -22px;
+              }  
+
+        } /* media*/
+            
+
+   </style>
+ </HEAD> 
+ <BODY> 
+  <nav> 
+     <ul>
+          <li><a href="#">Понедельник</a></li>
+          <li><a href="#">Вторник</a></li>
+          <li><a href="#">Среда</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Четверг</a></li>
+          <li><a href="#">Пятница</a></li>
+          <li><a href="#">Суббота</a></li>
+     </ul>
+  </nav>  
+ </BODY>
+</HTML>
