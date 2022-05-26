@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+     <META charset="utf-8"> 
+     <TITLE>Оформите список и контейнер с кодом согласно образцу </TITLE>      
+
+     <style > 
+       .code_c { background-color: black;
+                 color: green;
+                 width: 400px; height: 75px;
+            
+                 overflow-y: scroll;
+               }
+        .spis_l{ list-style-type: upper-latin; 
+                 width: 350px;}       
+         
+    </style>
+    </head> 
+    <body>
+      <div class="code_c">
+          <code>
+            from urllib.request import urlopen         # из модуля urllib импортируем функцию urlopen <br>
+
+            u = urlopen("http://python.org")    # открываем URL на чтение<br>
+            words = {}                          # связываем имя words с пустым словарём<br>
+                                                # (словарь — неупорядоченный [[ассоциативный массив]])<br>
+            for line in u:                      # читаем u по строкам<br>
+            line =line.decode("utf-8")      # преобразуем байт-строку в строку<br>
+            line = line.strip(" \n")        # отбрасываем начальные и конечные пробелы<br>
+            for word in line.split(" "):    # режем каждую строку на слова, ограниченные пробелами<br>
+            try:                            # блок обработки исключений<br>
+              words[word] += 1              # пытаемся увеличить words[word] на единицу<br>
+            except KeyError:                # если не получилось (раньше words[word] не было)<br>
+               words[word] = 1              # присваиваем единицу<br>
+           </code> 
+      
+       </div>
+     <div >
+      <ul class="spis_l">
+        <li> Line1    </li>
+        <li> Line2    </li>
+        <li> Line3_ex
+            <ul style="list-style-type:lower-latin">
+                <li> B_line1</li>
+                <li> B_line1</li>
+                <li> B_line1</li>
+            </ul>
+        </li>
+        <li> Line4 </li>
+      </ul>
+    </div>
+
+    </body>
+</html>
