@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+     <META charset="utf-8"> 
+     <TITLE>Оформите список и контейнер с кодом согласно образцу </TITLE>      
+
+     <style > 
+       .blok1 { background-color: rgb(187, 187, 187);
+                width: 15em;              
+                float: left;           
+                
+               }
+        .blok2{ background-color: gray;
+                margin-bottom: 2px;
+                margin-left: 15em;
+              
+                overflow: visible;
+               
+                }    
+        .blok3{ background-color: gray;}        
+
+
+        .rightimg  { 
+                     float: right;
+                     margin: 0px 5px 5px 15px
+                  }
+         
+    </style>
+    </head>
+ 
+    <body>
+    <div style="background-color: rgb(187, 187, 187)">
+        <div class="blok1">
+            <h4>Блок навигации.    </h4>        
+            <ul>
+                <li>ширина 15 ем</li>
+                <li>должен присутствовать цвет фона</li>
+                <li>располагается слева</li>
+                <li>блок навигации наполните контентом достаточным чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+  
+        </div>
+        <div class="blok2" >
+            <h4>Статья 1   </h4>   
+            Размер блока: <br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех статьях сделайте отступ снизу от соседей равным 2ем, при помощи свойства<br>
+            margin-bottom
+        </div>
+        <div class="blok2" >
+           <br> <h4>Статья 2 </h4>   
+            Размер блока: <br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех статьях сделайте отступ снизу от соседей равным 2ем, при помощи свойства<br>
+            margin-bottom Картинка вставлена при помощи тега, плавание организовано по правому краю <br>
+            данной статьи для этой картинки
+            
+  
+            <img src="email.jpg" width="50" height="50" class="rightimg"> 
+
+            <br style="clear:both">
+
+        </div>
+        <div></div>
+        <div class="blok3">
+            Нижний блок подвал. Занимает всю доступную ширину. Высота определяется помешенным внутрь контентом.
+        </div>
+    
+    </div>
+    </body>
+</html>
